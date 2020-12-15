@@ -4,10 +4,7 @@ const Theme = {
 };
 
 const body = document.querySelector('body');
-console.log(body);
 const checkbox = document.querySelector('#theme-switch-toggle');
-console.dir(checkbox);
-console.log(checkbox.checked);
 
 checkbox.addEventListener('change', changeTheme);
 
@@ -25,7 +22,6 @@ function changeTheme(e) {
   }
 }
 const currentTheme = localStorage.getItem('theme');
-console.log(currentTheme);
 
 function saveTheme() {
   if (currentTheme === Theme.DARK) {
